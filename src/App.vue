@@ -1,30 +1,27 @@
 <template>
-  <v-app>
-    <the-header :title="title"></the-header>
-    
-     
-  
+  <v-app dark>
+    <the-header :title="title" :clipped="true"></the-header>
     <v-content>
-      <HelloWorld/>
+      <main-profile subHeader="Computer Science Student" header="Coltin Kifer"/>
     </v-content>
-     
- 
+    <the-footer :fixed="true"></the-footer>
   </v-app>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader'
+import TheFooter from './components/TheFooter'
+import MainProfile from './components/MainProfile'
 
 export default {
   name: 'App',
   components: {
-    TheHeader
+    TheHeader,
+    TheFooter,
+    MainProfile
   },
   data () {
     return {
-      drawer: true,
-      fixed: false,
-      miniVariant: false,
       title: 'Coltin Kifer'
     }
   }
