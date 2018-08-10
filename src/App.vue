@@ -2,7 +2,7 @@
   <v-app dark>
     <the-header :title="title" :clipped="true"></the-header>
     <v-content>
-      <main-profile subHeader="Computer Science Student" header="Coltin Kifer"/>
+      <home-page/>
     </v-content>
     <the-footer :fixed="true"></the-footer>
   </v-app>
@@ -11,14 +11,14 @@
 <script>
 import TheHeader from './components/TheHeader'
 import TheFooter from './components/TheFooter'
-import MainProfile from './components/MainProfile'
+import HomePage from './views/HomePage'
 
 export default {
   name: 'App',
   components: {
     TheHeader,
     TheFooter,
-    MainProfile
+    HomePage
   },
   data () {
     return {

@@ -3,7 +3,7 @@
      <v-layout row wrap grid-list-md text-xs-center mt-5>
       <v-flex xs12 >
         <v-avatar size="150px">
-          <img src="./../assets/profile.jpg" alt="avatar">
+          <img src="./../assets/profile.jpg" alt="avatar" class="img-circle elevation-7">
         </v-avatar>
         <div class="headline mt-2">{{ header }}</div>
         <div class="subheading">{{ subHeader }}</div>
